@@ -1,0 +1,114 @@
+Name           : lame
+Version        : 3.99.5-2
+Description    : A high quality MPEG Audio Layer III (MP3) encoder
+Architecture   : x86_64
+URL            : http://lame.sourceforge.net/
+Licenses       : LGPL
+Groups         : None
+Provides       : None
+Depends On     : ncurses
+Optional Deps  : None
+Required By    : audacity  cdrdao  ffmpeg  ffmpeg-compat  gstreamer0.10-ugly-plugins  mencoder  mplayer  sox
+Optional For   : avidemux-cli  rubyripper-git
+Conflicts With : None
+Replaces       : None
+Installed Size : 943.00 KiB
+Packager       : Allan McRae <allan@archlinux.org>
+Build Date     : Thu 24 Oct 2013 08:20:58 PM CST
+Install Date   : Tue 05 Nov 2013 10:31:08 PM CST
+Install Reason : Installed as a dependency for another package
+Install Script : No
+Validated By   : Signature
+
+Name           : sox
+Version        : 14.4.1-4
+Description    : The Swiss Army knife of sound processing tools
+Architecture   : x86_64
+URL            : http://sox.sourceforge.net/
+Licenses       : GPL  LGPL
+Groups         : None
+Provides       : None
+Depends On     : libltdl  file  libsndfile  libpng  lame  opencore-amr  gsm
+Optional Deps  : libao: for ao plugin [installed]
+                 libmad: for mp3 plugin [installed]
+                 libid3tag: for mp3 plugin [installed]
+                 wavpack: for wavpack plugin [installed]
+                 libpulse: for pulse plugin [installed]
+Required By    : None
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size : 1215.00 KiB
+Packager       : Eric Belanger <eric@archlinux.org>
+Build Date     : Fri 25 Oct 2013 01:18:35 PM CST
+Install Date   : Mon 23 Dec 2013 01:19:44 PM CST
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+Name           : mp3gain
+Version        : 1.5.2-2
+Description    : Lossless mp3 normalizer with statistical analysis
+Architecture   : x86_64
+URL            : http://mp3gain.sourceforge.net
+Licenses       : GPL
+Groups         : None
+Provides       : None
+Depends On     : glibc
+Optional Deps  : None
+Required By    : None
+Optional For   : easymp3gain-gtk2-bin  rubyripper-git
+Conflicts With : None
+Replaces       : None
+Installed Size : 104.00 KiB
+Packager       : Sergej Pupykin <pupykin.s+arch@gmail.com>
+Build Date     : Wed 22 Feb 2012 09:56:02 PM CST
+Install Date   : Thu 28 Jun 2012 12:29:36 AM CST
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Unknown
+
+Name           : python2-eyed3
+Version        : 0.7.3-2
+Description    : A Python module and program for processing information about mp3 files
+Architecture   : any
+URL            : http://eyed3.nicfit.net/
+Licenses       : GPL
+Groups         : None
+Provides       : None
+Depends On     : python2
+Optional Deps  : None
+Required By    : None
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size : 976.00 KiB
+Packager       : Jelle van der Waa <jelle@vdwaa.nl>
+Build Date     : Sat 17 Aug 2013 05:02:01 AM CST
+Install Date   : Wed 04 Dec 2013 09:59:50 PM CST
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+Name           : flac
+Version        : 1.3.0-1
+Description    : Free Lossless Audio Codec
+Architecture   : x86_64
+URL            : http://flac.sourceforge.net/
+Licenses       : BSD  GPL
+Groups         : None
+Provides       : None
+Depends On     : libogg
+Optional Deps  : xmms: for using the xmms plugin
+Required By    : easytag  gstreamer0.10-good-plugins  gtkpod  libsndfile  mkvtoolnix-cli  sdl_sound  vorbis-tools
+Optional For   : deadbeef  rubyripper-git  vlc
+Conflicts With : None
+Replaces       : None
+Installed Size : 1199.00 KiB
+Packager       : Eric Belanger <eric@archlinux.org>
+Build Date     : Tue 28 May 2013 11:55:48 AM CST
+Install Date   : Thu 13 Jun 2013 04:32:36 PM CST
+Install Reason : Installed as a dependency for another package
+Install Script : No
+Validated By   : Signature
+

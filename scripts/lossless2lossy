@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+import lossless2lossy.lossless2lossy as l2l
+l2l.main()
