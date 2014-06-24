@@ -71,6 +71,8 @@ Installing lossless2lossy
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 Once all of the dependencies are installed simply do::
 
+    git checkout https://github.com/lenzenmi/lossless2lossy.git
+    cd lossless2lossy
     python setup.py install
     
 Usage
@@ -95,5 +97,5 @@ Example
 ~~~~~~~
 ::
     
-    lossless2lossy --delete /home/music/flac/ /home/music/mp3/    
+    lossless2lossy --delete /home/music/flac/ /home/music/mp3/
     
