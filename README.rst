@@ -32,6 +32,12 @@ Supported Formats
 Installation
 ------------
 
+Start off by cloning the lossless2lossy repository::
+
+    git checkout https://github.com/lenzenmi/lossless2lossy.git
+    cd lossless2lossy
+
+
 Before installing lossless2lossy, you will need to install 3rd party packages and ensure they are available on your system path.
 
 Required System Packages
@@ -39,29 +45,21 @@ Required System Packages
 :Name: lame
 :URL: http://lame.sourceforge.net/
 
-----
-
 :Name: flac
 :URL: https://xiph.org/flac/
-
-----
 
 :Name: sox
 :URL: http://sox.sourceforge.net/
 
-----
-
 :Name: mp3gain
 :URL: http://mp3gain.sourceforge.net
-
-----
 
 :Name: python2-eyed3
 :URL: http://eyed3.nicfit.net/
 
 Required Python Packages
 ~~~~~~~~~~~~~~~~~~~~~~~~
-mutagenx
+1. mutagenx
 
 The easiest way to install python packages is to use ``pip``::
 
@@ -71,8 +69,6 @@ Installing lossless2lossy
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 Once all of the dependencies are installed simply do::
 
-    git checkout https://github.com/lenzenmi/lossless2lossy.git
-    cd lossless2lossy
     python setup.py install
     
 Usage
