@@ -2,7 +2,6 @@
 Module for working with flac files
 '''
 import subprocess
-import os
 import re
 
 import mutagenx.flac

@@ -54,7 +54,7 @@ class Mp3(mutagenx.mp3.EasyMP3, abstract.Lossy):
         if not os.path.isdir(dirname):
             os.makedirs(dirname, exist_ok=True)
 
-        cmd = ['/usr/bin/env', 'lame', '-V0', '-', outfile]
+        cmd = ['lame', '-V0', '-', outfile]
         encoded = subprocess.Popen(cmd,
                                    stdin=popen_object.stdout,
                                    stderr=subprocess.PIPE,
@@ -76,7 +76,7 @@ class Mp3(mutagenx.mp3.EasyMP3, abstract.Lossy):
         '''
         path = os.path.dirname(self.filename)
         mp3files = glob.glob(os.path.join(path, '*' + self.EXTENSIONS[0]))
-        cmd = ['/usr/bin/env', 'mp3gain', '-a', '-c', '-s', 'i', '-s', 'r']
+        cmd = ['mp3gain', '-a', '-c', '-s', 'i', '-s', 'r']
         cmd.extend(mp3files)
         popen = subprocess.Popen(cmd,
                                  stdout=subprocess.PIPE,
@@ -95,7 +95,7 @@ class Mp3(mutagenx.mp3.EasyMP3, abstract.Lossy):
         path = os.path.dirname(self.filename)
         mp3files = glob.glob(os.path.join(path, '*' + self.EXTENSIONS[0]))
         for mp3file in mp3files:
-            cmd = ['/usr/bin/env', 'eyeD3', '--to-v1.1'] + [mp3file]
+            cmd = ['eyeD3', '--to-v1.1'] + [mp3file]
             popen = subprocess.Popen(cmd,
                                      stdout=subprocess.PIPE,
                                      stderr=subprocess.PIPE)
