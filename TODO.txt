@@ -1,1 +1,4 @@
-* Add signal handling to cleanly shutdown after receiving ``crtl^C``
+* Add signal handling to cleanly shutdown after receiving :kbd: `crtl^C`
+* Keep track of folders under processing and remove unfinished conversions in case of exception
+* Bubble up exceptions from individual worker processes
+* Fix eyed3 encode errors by setting ``--set-encoding=utf8``
